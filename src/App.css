@@ -1,0 +1,62 @@
+
+.App {
+  text-align: center;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  }
+.header {
+  display : flex ;
+  justify-content: space-evenly;
+  margin : 0 20%;
+  padding :2%;
+}
+.item {
+  display : flex;
+  justify-content: space-between;
+  margin : 2% 20%;
+  background-color: rgb(229, 237, 240);
+  color : black;
+  padding : 10px 20px;
+  border-radius: 5px;
+}
+input {
+  border:0;
+  padding : 5px 10px;
+  border-radius: 5px;
+  outline-style: none;
+  background-color:rgb(229, 237, 240) ;
+}
+.add {
+  background-color: white;
+  padding : 10px 20px;
+  border-radius: 999px;
+  background-color:rgb(229, 237, 240) ;
+}
+button {
+  background-color:rgb(229, 237, 240) ;
+  border :0;
+  outline-style: none;
+  color : rgb(45, 45, 112)
+}
+select {
+  padding : 10px 20px;
+  border-radius: 999px;
+  background-color:rgb(229, 237, 240) ;
+}
+.input_edit {
+  width: 80%;
+  margin : 0 10px;
+  padding : 5px 10px;
+  background-color:rgb(188, 211, 219)
+}
+.modal_edit{
+  background-color:rgb(229, 237, 240)
+}
+
+h5 {
+ 
+}
