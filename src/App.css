@@ -1,12 +1,14 @@
 
 .App {
   text-align: center;
+  background-color: #404652;
 }
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  font-size: calc(10px + 2vmin);
   color: white;
+  margin:0 10%;
+  border-radius: 10px;
   }
 .header {
   display : flex ;
@@ -57,6 +59,8 @@ select {
   background-color:rgb(229, 237, 240)
 }
 
-h5 {
- 
+h1 {
+ color :white;
+ padding : 20px 0;
+ background-color:#202225 ;
 }

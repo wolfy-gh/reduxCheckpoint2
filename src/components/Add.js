@@ -20,7 +20,8 @@ function Add() {
                     type="text"
                     value={inputTodo}
                     onChange={(e) => setInputTodo(e.target.value)}
-                    placeholder="What to Do ?" />
+                    placeholder="What to Do ?"
+                    />
                 <button onClick={add} style={{color:'black'}}> <AddCircleIcon /></button>
             </form>
         </div>

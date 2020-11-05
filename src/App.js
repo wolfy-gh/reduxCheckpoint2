@@ -8,6 +8,7 @@ function App() {
   const [filter, setFilter] = useState("all")
   return (
     <div className="App">
+      <h1>To Do App</h1>
       <header className="App-header">
         <div className='header'>
           <Add />

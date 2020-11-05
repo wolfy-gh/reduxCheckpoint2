@@ -7,7 +7,7 @@ const todoReducer = (state =[], action ) => {
         case 'IS_DONE' :
             return state.map(el => el.id === action.playload ? {...el,isDone : !el.isDone} : el)
         case 'EDIT_TODO' :
-            return state.map(el => el.id === action.playload.id ? {...el, description : action.playload.newinput}: el)
+            return state.map(el => el.id === action.playload.id ? {...el, description : action.playload.newinput, isDone : false}: el)
         default : 
             return state
     }
