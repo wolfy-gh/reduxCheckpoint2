@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 import { editTodo } from '../actions'
 import '../App.css'
 
-function Edit({ id, description}) {
+function Edit({ id, description }) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -23,7 +23,8 @@ function Edit({ id, description}) {
     id: id,
     newinput: editinput
   }
-  const edit = () => {
+  const edit = (e) => {
+    e.preventDefault()
     if (editinput !== '') {
       dispatch(editTodo(newInput))
       handleClose()
@@ -42,9 +43,11 @@ function Edit({ id, description}) {
         keyboard={false}
       >
         <Modal.Body className="modal_edit">
+          <form>
             <input type="text" placeholder={description} onChange={handleChange} value={editinput} className='input_edit' />
-            <button onClick={edit}><DoneAllIcon style={{ color: "rgb(29, 133, 29)" }} type="submit"/></button>
+            <button onClick={edit}><DoneAllIcon style={{ color: "rgb(29, 133, 29)" }} type="submit" /></button>
             <button onClick={handleClose}><CloseIcon style={{ color: "rgb(172, 79, 79)" }} /></button>
+          </form>
         </Modal.Body>
       </Modal>
     </>
