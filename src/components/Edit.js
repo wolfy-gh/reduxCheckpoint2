@@ -9,7 +9,10 @@ import '../App.css'
 
 function Edit({ id, description }) {
   const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
+  const handleClose = () =>{
+    setShow(false);
+    setEditinput(description)
+    }
   const handleShow = () => setShow(true);
 
   const [editinput, setEditinput] = useState(description)
@@ -43,11 +46,13 @@ function Edit({ id, description }) {
         keyboard={false}
       >
         <Modal.Body className="modal_edit">
+          <>
           <form>
             <input type="text" placeholder={description} onChange={handleChange} value={editinput} className='input_edit' />
             <button onClick={edit}><DoneAllIcon style={{ color: "rgb(29, 133, 29)" }} type="submit" /></button>
-            <button onClick={handleClose}><CloseIcon style={{ color: "rgb(172, 79, 79)" }} /></button>
           </form>
+          </>
+          <button onClick={handleClose}><CloseIcon style={{ color: "rgb(172, 79, 79)" }} /></button>
         </Modal.Body>
       </Modal>
     </>

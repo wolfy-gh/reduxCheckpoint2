@@ -15,14 +15,14 @@ function Add() {
     const dispatch = useDispatch()
     return (
         <div className='add'>
-            <form >
+            <form className='add_f'>
                 <input name="description"
                     type="text"
                     value={inputTodo}
                     onChange={(e) => setInputTodo(e.target.value)}
                     placeholder="What to Do ?"
-                    />
-                <button onClick={add} style={{color:'black'}}> <AddCircleIcon /></button>
+                />
+                    <button onClick={add} style={{ color: 'black' }}> <AddCircleIcon /></button>
             </form>
         </div>
     )

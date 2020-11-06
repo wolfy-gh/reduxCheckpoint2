@@ -33,10 +33,16 @@ input {
   background-color:rgb(229, 237, 240) ;
 }
 .add {
+  
   background-color: white;
   padding : 10px 20px;
   border-radius: 999px;
   background-color:rgb(229, 237, 240) ;
+}
+.add_f{
+  display:flex;
+  flex-wrap: nowrap;
+
 }
 button {
   background-color:rgb(229, 237, 240) ;
@@ -56,7 +62,9 @@ select {
   background-color:rgb(188, 211, 219)
 }
 .modal_edit{
-  background-color:rgb(229, 237, 240)
+  background-color:rgb(229, 237, 240);
+  display: grid;
+  grid-template-columns: 92% 8%;
 }
 
 h1 {
